@@ -55,8 +55,6 @@ def quadratic_multiply(x, y):
         n=0
         for i in x.binary_vec:
             n+=1
-        for j in y.binary_vec:
-            n+=1
         left = BinaryNumber(binary2int(left_x.binary_vec).decimal_val * binary2int(left_y.binary_vec).decimal_val)
         left = bitshift(left,n)
         mid1 = binary2int(left_x.binary_vec).decimal_val + binary2int(right_y.binary_vec).decimal_val
